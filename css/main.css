@@ -13,19 +13,18 @@ article{
     float: left;
     width: 20%; height: 25vh; min-height: 210px;
     background-repeat: no-repeat; background-position: center; background-size: cover;
-    overflow: hidden;
+    transition: all .3s;
 }
 article > a{
     display: block;
     width: 100%; height: 100%;
     padding: 30px 40px;
-    transition: all .3s;
 }
 
 /* TXT */
-.txt a:hover{background-color: #889f84;}
-.txt a:hover .txt-box .tit,
-.txt a:hover .txt-box .desc{color: #fff;}
+.txt:hover{background-color: #889f84;}
+.txt:hover .txt-box .tit,
+.txt:hover .txt-box .desc{color: #fff;}
 
 /* TXT BOX */
 .txt-box .tit{
@@ -35,22 +34,28 @@ article > a{
     transition: all .3s;
 }
 .txt-box .tit span{
-    position: relative; transition: all .3s; overflow: hidden;}
+    position: relative;
+    transition: all .3s;
+}
 .txt-box .tit span::before{content: "";
     width: 0; height: 2px;
     background-color: #dee6dd;
-    position: absolute; left: 0; bottom: -5px;
+    position: absolute; left: 0; bottom: -4px;
     transform-origin: left center;
     transition: all .3s;
 }
 .txt-box .tit span::after{content: attr(txt);
     color: #fff;
     position: absolute; left: 0;
+    opacity: 0;
     transform: translate3d(100%, 0, 0); transform-origin: right center;
     transition: all .3s;
 }
-.txt a:hover .txt-box .tit span::before{width: 100%;}
-.txt a:hover .txt-box .tit span::after{transform: translate3d(0, 0, 0);}
+.txt:hover .txt-box .tit span::before{width: 100%;}
+.txt:hover .txt-box .tit span::after{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
 .txt-box .desc{transition: all .3s;}
 .txt-box .desc span{display: block;}
@@ -97,7 +102,7 @@ article > a{
     display: flex; justify-content: center; align-items: center;
     text-align: center;
     position: relative;
-    transition: .3s;
+    transition: all .3s;
 }
 .material.img .txt-box{
     color: #fff;
@@ -119,14 +124,16 @@ article > a{
 /* -------------------- GIFT -------------------- */
 .gift{
     height: 50vh; min-height: 420px;
+    border: 0px solid #889f84;
     background: url(../img/main-gift.jpg) no-repeat center / cover;
 }
 .gift a{
     display: flex; align-items: flex-end;
     color: #fff;
-    border: 0px solid #889f84;
+    transition: all .3s;
 }
-.gift a:hover{border: 15px solid #889f84;}
+.gift:hover{border: 15px solid #889f84;}
+.gift:hover a{padding: 20px 25px;}
 
 
 /* -------------------- BEST -------------------- */
@@ -334,6 +341,7 @@ article > a{
     ******************************/
     /* -------------------- MAIN COMMON -------------------- */
     .txt-box .tit{font-size: 2rem;}
+    .txt-box .tit span::before{bottom: -3px;}
 }
 
 
