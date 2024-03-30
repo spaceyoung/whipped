@@ -16,16 +16,13 @@
 ![whipped](https://github.com/spaceyoung/whipped/assets/154400292/bd410c8a-8d2b-4857-ba30-454fb13184de)
 <br>
 <br>
-<br>
 
 ## 🥑 배포 주소
 [https://spaceyoung.github.io/whipped/](https://spaceyoung.github.io/whipped/)
 <br>
 <br>
-<br>
 ## 🔎 개요
-반응형 웹을 구현할 수 있는 **CSS의 flex, 미디어 쿼리** 등의 기능 활용을 위해 **다양한 Viewport에 따른 화면 변화**에 중점을 두고 리디자인을 진행한 프로젝트입니다. 해당 프로젝트를 통해 **반응형 웹의 레이아웃 설계**를 익힐 수 있었습니다.
-<br>
+기존 웹사이트의 **불완전한 Viewport 대응을 개선**하고, 반응형 웹을 구현할 수 있는 **CSS의 flex, 미디어 쿼리** 등의 기능 활용을 위해 작업한 프로젝트입니다. **시멘틱 태그**를 사용하여 **웹표준과 접근성**을 지키면서도, **다양한 Viewport에 따른 화면 변화**에 중점을 두고 리디자인을 진행했습니다. 해당 프로젝트를 통해 **반응형 웹의 레이아웃 설계**를 익힐 수 있었습니다.
 <br>
 <br>
 ## 🛠 사용 기술
@@ -42,7 +39,6 @@
     - Github
     - Visual Studio Code
 ```
-<br>
 <br>
 
 ## 🖥 구현 화면
